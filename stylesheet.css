@@ -1,0 +1,155 @@
+body{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #5b2028,
+        #7a1f2b
+    );
+
+    font-family:'Special Elite', cursive;
+}
+
+.quiz-header h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:3.5rem;
+
+    color:#d8c8b4;
+
+    margin-bottom:10px;
+
+    letter-spacing:2px;
+}
+
+.subtitle{
+    color:#d8c8b4;
+    font-size:1.1rem;
+}
+
+.quiz-card{
+    background:#fffdf8;
+
+    border:2px solid #d8c8b4;
+
+    border-radius:12px;
+
+    padding:40px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+}
+
+#question{
+    text-align:center;
+
+    font-size:2rem;
+
+    margin-bottom:40px;
+
+    color:#4a342e;
+
+    line-height:1.4;
+}
+
+.image-container img{
+    width:100%;
+    max-width:450px;
+
+    border-radius:8px;
+
+    object-fit:cover;
+
+    filter:sepia(.15);
+
+    box-shadow:
+    0 6px 18px rgba(0,0,0,.12);
+}
+
+.answer-btn{
+    background:#fffdf8;
+
+    border:2px solid #c8b6a0;
+
+    border-radius:8px;
+
+    padding:20px;
+
+    font-family:'Special Elite', cursive;
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 3px 10px rgba(0,0,0,.05);
+
+    transition:.25s;
+}
+
+.answer-btn:hover{
+    background:#7a1f2b;
+
+    color:#fffdf8;
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 8px 16px rgba(122,31,43,.25);
+}
+
+.feedback-box{
+    margin-top:30px;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    padding:18px;
+
+    border-radius:8px;
+
+    background:#f3ece2;
+
+    border-left:6px solid #7a1f2b;
+}
+
+#feedback-text{
+    font-weight:normal;
+    color:#4a342e;
+}
+
+.progress-section span{
+    font-weight:normal;
+    color:#4a342e;
+}
+
+.progress-bar{
+    flex:1;
+
+    height:12px;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    background:#ddd2c2;
+}
+
+.progress-fill{
+    width:25%;
+    height:100%;
+
+    background:
+    linear-gradient(
+        90deg,
+        #9f2235,
+        #7a1f2b
+    );
+}
